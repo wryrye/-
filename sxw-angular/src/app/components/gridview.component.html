@@ -1,0 +1,13 @@
+<table id = "grid">
+  <tr *ngFor="let i of currentSet.data | slice:this.index:this.index+this.itemCount; let j=index">
+    <td>
+      {{i[3]}}<br/>
+      {{i[2]}}
+    </td>
+  </tr>
+</table>
+<div id = "navigation-wrapper">
+  <span id = "prev-page" (click) = "prevPage()">上页<span class = 'fa fa-arrow-left'></span></span>
+  <span id = "next-page" (click) = "nextPage()"class = 'fa fa-arrow-right'>下页</span>
+
+</div>

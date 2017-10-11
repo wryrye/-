@@ -1,0 +1,7 @@
+Problem: Cannot resolve module 'fs'
+Solution:
+Put
+node: {
+  fs: "empty"
+}
+in webpack.config.js

@@ -1,0 +1,10 @@
+{
+  "name": "sxw-server",
+  "version": "1.0.0",
+  "description": "simple file server",
+  "main": "index.js",
+  "author": "ryan coughlin",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

@@ -1,0 +1,35 @@
+<div id="welcome2"><div id="center">欢迎</div></div>
+<div id='title'>上下文</div>
+
+<span id ="search-wrapper">
+  <div id ="search-icon" class = 'fa fa-search'  (click) = "toggleSearchbar()"></div>
+  <input id = "search-bar" type="text" (keypress)="keypressHandler($event.keyCode, 'search')">
+  <div id ="close-icon" *ngIf = "this.currentSet != this.masterSet" class = 'fa fa-close' (click) = 'clearSearch()'>
+    <div id = 'currentSearch'>{{this.currentSearch}}</div>
+  </div>
+</span>
+
+<div id ="settings-wrapper">
+  <div id ="settings-icon" class = 'fa fa-cogs' (click) = 'showSettingsList()'></div>
+  <div id = "settings-list">
+    <table>
+      <tr *ngFor="let string of settings">
+        <td>{{string}}<input class = 'checkbox' type="checkbox" (click)="toggleSettings(string, $event.target)"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<main *ngIf = "!this.showGridView">
+  <div id='engSent'>{{this.engSent}}</div>
+  <span id = 'user-entry'>
+      <input id = 'textfield' type="text" (keypress)="keypressHandler($event.keyCode, 'guess')">
+      <span id = "submit" class = 'fa fa-arrow-circle-right' (click) = 'testGuess()' ></span>
+    </span>
+  <div id = 'results-wrapper'>
+    <div id ='prevEngSent'>{{this.prevEngSent}}</div>
+    <div id ='chinSent'></div>
+  </div>
+</main>
+<grid-view *ngIf = "this.showGridView" [currentSet] = 'this.currentSet'></grid-view>
+

@@ -1,0 +1,217 @@
+#welcome2{
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top:0;
+  animation: fade;
+  animation-duration: 1s;
+  background: #fff5d1;
+  z-index: 3;
+}
+
+#center{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 15em;;
+}
+
+
+main {
+  /*background: #4d6aa7;*/
+  font-family: Ubuntu;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position:absolute;
+}
+
+#title{
+  position: relative;
+  font-size: 10em;
+  text-shadow: -8px 0 red, 0 8px yellow, 8px 0 blue, 0 -8px red;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#guess-wrapper{
+  position: relative;
+  width: 100%;
+
+}
+
+
+#engSent{
+  position: relative;
+  font-size: 3em;
+  color: white;
+  width: 100%;
+  height: 4em;
+  overflow-y: auto;
+}
+
+#user-entry{
+  display: inline-block;
+  position: relative;
+  width:80%;
+  height:6em;
+  top: 65%
+
+}
+
+#textfield{
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border-radius: 10px 10px;
+  font-size: 2em;
+}
+
+#submit{
+  font-size: 3em;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0%;
+
+}
+
+#results-wrapper{
+  position: absolute;
+  width: 100%;
+}
+
+#prevEngSent{
+  font-size: 3.5em;
+  color: black;
+  width: 100%;
+}
+#chinSent{
+  font-size: 4em;
+  width: 100%;
+}
+
+.char-right{
+  color:lawngreen;
+}
+
+.char-wrong{
+  color:red;
+}
+
+@keyframes fade {
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+#search-wrapper {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+
+#search-icon{
+  position: relative;
+  font-size: 4em;
+  float: left;
+}
+
+#search-bar{
+  visibility: hidden;
+  width: 0px;
+  height: 2em;
+  border-radius: 10px 10px;
+  font-size: 2em;
+  margin-left: 1vw;
+  transition: width .75s;
+}
+
+#close-icon{
+  position: relative;
+  font-size: 5em;
+  display: block;
+}
+#currentSearch{
+  font-size:.6em;
+  display: inline-block;
+}
+
+
+
+#settings-wrapper {
+  position: absolute;
+  margin-right:10px;
+  margin-top: 10px;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+#settings-icon{
+  position: relative;
+  font-size: 4em;
+  display: block;
+  text-align: right;
+}
+
+#settings-list{
+  visibility: hidden;
+  background: white;
+  max-height: 0em;
+  font-size: 2em;
+  border-radius: 10px 10px;
+  border-style: solid;
+  border-width:medium;
+  margin-top: 1vw;
+  transition: max-height .75s;
+  float:right;
+  overflow: hidden;
+}
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border: solid;
+  border-width: 1px 0;
+}
+
+td{
+  padding: 0.4em;
+  text-align: right;
+
+}
+
+.checkbox{
+  height: 0.7em;
+  width: 0.7em;
+  margin-left: 1vw;
+}
+
+tr:first-child {
+  border-top: none;
+}
+tr:last-child {
+  border-bottom: none;
+}
+
+grid-view{
+  position: absolute;
+  width: 100%;
+}
+
+
